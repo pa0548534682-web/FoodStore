@@ -53,4 +53,25 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => {
     console.error('MongoDB connection error:', err.message);
   });
- 
+  //  מדועהפרויקט לא מצליח לעלות לgithub?
+//  // ודא שיצרת מאגר (Repository) חדש ב-GitHub
+// יש שם קובץ README.md כברירת מחדל
+// איך לדחוף (Push) את הקוד המקומי שלך למאגר ב-GitHub?
+// // 1. פתח טרמינל בספריית הפרויקט המקומית שלך
+// // 2. הרץ את הפקודות הבאות:
+// git init
+// git add . אך איך מעלים בפעם הראשונה?
+// git commit -m "Initial commit"
+// git branch -M main
+//git branch -M main
+//  :הסבר על הפקודה
+//  // git init - יוצר מאגר Git חדש בספרייה הנוכחית
+//  // git add . - מוסיף את כל הקבצים לשלב ההכנה (staging area) לקומיט
+//  // git commit -m "Initial commit" - יוצר קומיט עם ההודעה הנתונה
+//  // git branch -M main - משנה את שם הסניף הראשי ל-main
+// מה זאת אומרת?
+//  // ברירת המחדל של GitHub לסניף הראשי היא main ולא master
+//  // לכן חשוב לשנות את שם הסניף המקומי שלך ל-main כדי להתאים
+// 
+// // // 3. חבר את המאגר המקומי שלך למאגר הרחוק ב-GitHub
+// 
