@@ -1,9 +1,9 @@
 import express from 'express';
 import {
+  getAllUsers,
   registerUser,
   loginUser,
-  getAllUsers,
-    updateUser,
+  updateUser,
   deleteUser
 } from '../controllers/user.js';
 
@@ -12,7 +12,7 @@ const router = express.Router();
 /*
   POST /api/users/register
   רישום משתמש חדש כולל הצפנת סיסמאות"
-*/
+*/ 
 router.post('/register', registerUser);
 
 /*

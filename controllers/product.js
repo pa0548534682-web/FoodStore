@@ -44,23 +44,7 @@ export const getProductById = async (req, res) => {
     res.status(500).json({title:"Error", message: error.message });
   }
 };
-/*
- חיפוש מוצרים לפי קטגוריה
-*/
-export const searchProducts = async (req, res) => {
-  try {
-    const query = req.query.q;
-    if(!query)
-      return res.status(400).json({title:"missing query", message: 'Search query is required' });
-    const products = await Product.find({
-      category: { $regex: query, $options: 'i' }
-      //ביטוי רגולרי המאפשר למצוא חלק מתת מחרוזת וכן ללא התחשבות באותיות קטנות או גדולות
-    });
-    return res.json(products);
-  } catch (error) {
-    return res.status(500).json({title:"Error searching products", message: error.message });
-  }
-};
+
 /*
  שליפת מוצרים לפי קטגוריה
 */
